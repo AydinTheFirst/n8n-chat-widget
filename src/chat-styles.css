@@ -1,0 +1,54 @@
+:root {
+  --chat--color-primary: oklch(from var(--primary) l c h);
+  --chat--color-primary-shade-50: oklch(from var(--primary) calc(l * 0.95) c h);
+  --chat--color-primary-shade-100: oklch(from var(--primary) calc(l * 0.9) c h);
+  --chat--color-secondary: oklch(from var(--secondary) l c h);
+  --chat--color-secondary-shade-50: oklch(
+    from var(--secondary) calc(l * 0.9) c h
+  );
+  --chat--color-white: oklch(from var(--background) l c h);
+  --chat--color-light: oklch(from var(--muted) l c h);
+  --chat--color-light-shade-50: oklch(from var(--muted) calc(l * 0.95) c h);
+  --chat--color-light-shade-100: oklch(from var(--muted) calc(l * 0.85) c h);
+  --chat--color-medium: oklch(from var(--border) l c h);
+  --chat--color-dark: oklch(from var(--foreground) l c h);
+  --chat--color-disabled: oklch(from var(--muted-foreground) l c h);
+  --chat--color-typing: oklch(from var(--muted-foreground) calc(l * 0.8) c h);
+
+  --chat--spacing: 1rem;
+  --chat--border-radius: var(--radius);
+  --chat--transition-duration: 0.15s;
+
+  --chat--window--width: 400px;
+  --chat--window--height: 600px;
+
+  --chat--header-height: auto;
+  --chat--header--padding: var(--chat--spacing);
+  --chat--header--background: oklch(from var(--card) l c h);
+  --chat--header--color: oklch(from var(--card-foreground) l c h);
+  --chat--header--border-top: none;
+  --chat--header--border-bottom: 1px solid oklch(from var(--border) l c h);
+  --chat--heading--font-size: 2em;
+  --chat--subtitle--font-size: inherit;
+  --chat--subtitle--line-height: 1.8;
+
+  --chat--textarea--height: 50px;
+
+  --chat--message--font-size: 1rem;
+  --chat--message--padding: var(--chat--spacing);
+  --chat--message--border-radius: var(--chat--border-radius);
+  --chat--message-line-height: 1.8;
+  --chat--message--bot--background: oklch(from var(--card) l c h);
+  --chat--message--bot--color: oklch(from var(--card-foreground) l c h);
+  --chat--message--bot--border: 1px solid oklch(from var(--border) l c h);
+  --chat--message--user--background: var(--chat--color-primary);
+  --chat--message--user--color: oklch(from var(--primary-foreground) l c h);
+  --chat--message--user--border: none;
+  --chat--message--pre--background: oklch(from var(--muted) l c h / 0.5);
+
+  --chat--toggle--background: var(--chat--color-primary);
+  --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+  --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+  --chat--toggle--color: oklch(from var(--primary-foreground) l c h);
+  --chat--toggle--size: 64px;
+}
